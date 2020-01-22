@@ -138,7 +138,7 @@ class ChoPro(object):
         self.lyrics = []
         self.gre = Re()
         for line in self.chopro_lines:
-            line = self._process_chopro_line(line, 'div')
+            line = self._process_chopro_line(line, html_style)
         self.is_processed = True
 
     def get_html(self, html_style=None, include_meta=True):
