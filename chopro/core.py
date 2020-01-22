@@ -252,13 +252,13 @@ class ChoPro(object):
 
             # generate chords row
             html.append('<tr class="chords-line">')
-            for i in xrange(len(chords)):
+            for i in range(len(chords)):
                 html.append('<td class="%s">%s</td>' % (self.get_chords_html_classes(), chords[i],))
             html.append('</tr>')
 
             # generate lyrics row
             html.append('<tr class="lyrics-line">')
-            for i in xrange(len(chords)):
+            for i in range(len(chords)):
                 html.append('<td class="%s">%s</td>' % (self.get_lyrics_html_classes(), lyrics[i],))
             html.append('</tr>')
 
